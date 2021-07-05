@@ -92,6 +92,8 @@ func (w *fluentWriter) Write(p []byte) (n int, err error) {
 			tag := w.constructTag(msg, p)
 			return w.send(tag, msg, len(p))
 		}
+	} else {
+		msg = make(map[string]interface{})
 	}
 
 	// if its not JSON, construct a JSON string with the msg like:
