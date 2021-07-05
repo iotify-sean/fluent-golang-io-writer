@@ -1,4 +1,4 @@
-module github.com/awslabs/fluent-golang-io-writer
+module github.com/iotify-sean/fluent-golang-io-writer
 
 go 1.12
 
